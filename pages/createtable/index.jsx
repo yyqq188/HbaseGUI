@@ -4,6 +4,7 @@ import { Card,Grid,Col ,Text, List, ListItem, Title, Button,Metric, Icon,
   Table, TableHead, TableHeaderCell, TableBody, TableRow, TableCell, TableFoot, TableFooterCell } from '@tremor/react'
 import { GrUpdate } from "react-icons/gr";
 import { AiOutlinePlusCircle } from "react-icons/ai";
+import { RxReset } from "react-icons/rx";
 
 const cities = [
   {
@@ -362,9 +363,11 @@ const CreateTable = () => {
                 <TextInput placeholder='' className='mt-2'></TextInput>
               </Flex>
             </div>
-            <div className='flex justify-center mt-2'>
+            <div className='flex justify-around mt-2'>
               <Button icon={AiOutlinePlusCircle}>创建</Button>
+              <Button icon={RxReset}>重置</Button>
             </div>
+            
             <div className='h-40'></div>
           </Card>
         </Col>
